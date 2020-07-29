@@ -19,38 +19,38 @@ root : [4, 2, 6, 1, 3, null, null]
     1   3 
 
 
----> stack opened @t node: 4
----> stack opened @t node: 2
----> stack opened @t node: 1
+---> stack opened at node: 4
+---> stack opened at node: 2
+---> stack opened at node: 1
 []
     cur node: 1
-<--- stack closed @t node: 1, min :2147483647
+<--- stack closed at node: 1, min :2147483647
 
     * left sub: 2147483647
 [1]
     cur node: 2
     diff: 1
----> stack opened @t node: 3
+---> stack opened at node: 3
 [1, 2]
     cur node: 3
     diff: 1
-<--- stack closed @t node: 3, min :1
+<--- stack closed at node: 3, min :1
 
     * right sub: 1
-<--- stack closed @t node: 2, min :1
+<--- stack closed at node: 2, min :1
 
     * left sub: 1
 [1, 2, 3]
     cur node: 4
     diff: 1
----> stack opened @t node: 6
+---> stack opened at node: 6
 [1, 2, 3, 4]
     cur node: 6
     diff: 2
-<--- stack closed @t node: 6, min :2
+<--- stack closed at node: 6, min :2
 
     * right sub: 1
-<--- stack closed @t node: 4, min :1
+<--- stack closed at node: 4, min :1
 
 ```
 
@@ -80,10 +80,10 @@ curr = 69
 
 ### 코드
 
-* [Java](./MinDistBetweenNode.java)
+* [java](./_java/MinDistBetweenNode.java)
 
-<!-- * [Kotlin](./MinDistBetweenNode.kt) -->
+![](img/MinDistBetweenNode.png)
+
+* [kotlin](./_kotlin/MinDistBetweenNode.kt)
 
 <!-- * [Rust](./min_dist_between_node.rs) -->
-
-![](./MinDistBetweenNode.png)

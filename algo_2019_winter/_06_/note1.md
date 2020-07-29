@@ -40,29 +40,10 @@ https://programmers.co.kr/learn/courses/30/lessons/42578
 
 ### 코드 및 실행결과
 
-* [성공](camouflage.py) : 파이썬으로 작성한 코드  
-  ![결과](camouflage.png)
-
-* [성공](Camouflage.kt) : 코틀린으로 작성한 코드  
-  <!-- ![결과](Camouflage.png) -->
-
-
-# [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) 
-
-
-
 ### 코드 및 실행결과
-<!-- * [실패](word_concat.py) : 파이썬으로 작성한 코드  
-  ![결과](end-to-end_word_concatenation_python.png)
-
-* [실패](word_concat.js) : 자바스크립트로 작성한 코드  
-  ![결과](end-to-end_word_concatenation_js.png)
-
-* [성공](E2eWordConcat.java) : 자바로 작성한 코드  
-  ![결과](E2eWordConcat.png) -->
 
 * [python](./_python/camouflage.py)
-<!-- * [java](./.java) -->
+
 * [kotlin](./_kotlin/Camouflage.kt)
 <!-- * [rust](./.rs) -->
 <!-- * [javascript](./.js) -->

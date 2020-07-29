@@ -7,16 +7,11 @@ https://programmers.co.kr/learn/courses/30/lessons/42627
 
 ###### 예제 1
 
-[[0, 3], [1, 9], [2, 6]]
-
+[ [0, 3], [1, 9], [2, 6] ]
 
 9
 
-
 ### 코드 및 실행결과
-
-<!-- * [실패](disk_controller.ts) : 타입스크립트로 작성한 코드  
-  ![결과](./disk_controller_fail_typescript.png) -->
 
 * [java](./_java/DiskController.java)
 

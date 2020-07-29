@@ -43,6 +43,9 @@ Node(5)
 
 ### 코드
 
-* [Java](./SortedArrToBst.java)
+* [java](./_java/SortedArrToBst.java)
 
-![SortedArrToBst](./SortedArrToBst.png)
+![SortedArrToBst](./img/SortedArrToBst.png)
+
+* [kotlin](./_kotlin/SortedArrToBst.java)
+

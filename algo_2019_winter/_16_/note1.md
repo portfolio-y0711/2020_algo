@@ -22,7 +22,6 @@ tree:
 [2, 3, 4, 5, 6]
 [2, 3, 4, 5, 6, 7]
 
-6C2 = (6 x 5) / (2 x 1) = 15
 comb:
 [2, 3] [2, 4] [2, 5] [2, 6] [2, 7]
 -> 5, 6, 7, 8, 9
@@ -43,4 +42,6 @@ comb:
 
 ### 코드
 
-* [Java](./BstPlusTwo.java)
+* [java](./_java/BstPlusTwo.java)
+
+* [kotlin](./_java/BstPlusTwo.java)

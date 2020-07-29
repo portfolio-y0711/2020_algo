@@ -7,27 +7,130 @@ https://programmers.co.kr/learn/courses/30/lessons/17679
 
 ##### 예제 1
 
-```typescript
+```ts
+
 [CCBDE, AAADE, AAABF, CCBBF]
+
+*  
+CCBDE
+AAADE
+AAABF
+CCBBF
+
+------------
+[match]
+
+CCBDE
+***DE
+***BF
+CCBBF
+
+[crash]
+
+CCBDE
+...DE
+...BF
+CCBBF
+
+[descend]
+
+...DE
+...DE
+CCBBF
+CCBBF
+
+------------
+[match]
+
+...DE
+...DE
+****F
+****F
+
+[crash]
+...DE
+...DE
+....F
+....F
+
+[descend]
+....E
+....E
+...DF
+...DF
+
 ```
 
 ##### 예제 2
 
-```typescript
+```ts
+
 [TTTANT, RRFACC, RRRFCC, TRRRAA, TTMMMF, TMMTTJ]    
+
+*
+TTTANT
+RRFACC
+RRRFCC
+TRRRAA
+TTMMMF
+TMMTTJ    
+------------
+
+[match]
+
+TTTANT
+**FA**
+***F**
+T**RAA
+TTMMMF
+TMMTTJ    
+
+[crash]
+
+TTTANT
+..FA..
+...F..
+T..RAA
+TTMMMF
+TMMTTJ    
+
+[descend]
+...A..
+...A..
+T.TFNT
+TTFRAA
+TTMMMF
+TMMTTJ    
+
+------------
+[match]
+...A..
+...A..
+T.TFNT
+**FRAA
+**MMMF
+TMMTTJ    
+
+[crash]
+...A..
+...A..
+T.TFNT
+..FRAA
+..MMMF
+TMMTTJ    
+
+[descend]
+...A..
+...A..
+..TFNT
+..FRAA
+T.MMMF
+TMMTTJ    
 ```
-
-##### 예제 3
-
-```typescript
-```
-
-
 
 
 ### 코드 및 실행결과
 
-<!-- * [실패](friends_4_blocks.ts) : 타입스크립트로 작성한 코드  
-  ![결과](friends_4_blocks_ts.png) -->
+* [typescript](./_typescript/friends_4_blocks.ts)
 
-* [typescript](./friends_4_blocks.ts)
+

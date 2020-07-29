@@ -1,0 +1,12 @@
+*
+!*/
+!*.*
+*.jar
+!gradle-wrapper.jar
+!gradlew
+yarn.lock
+build
+.idea
+.gradle
+.DS_Store
+node_modules
