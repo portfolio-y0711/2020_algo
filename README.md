@@ -131,7 +131,7 @@
 
 * [타워](2019-2020_programmers/_01_/src/python/tower_stack.py)
 
-* [큰 수 만들기](2019-2020_programmers/_02/src/python/../../../_02_/src/python/create_a_large_number.py)
+* [큰 수 만들기](2019-2020_programmers/_02_/src/python/create_a_large_number.py)
 
 * [캐시](2019-2020_programmers/_03_/src/python/cache.py)
 
@@ -201,6 +201,9 @@
 <details open><summary>(닫기...)</summary>
 
 * [큰 수 만들기](2019-2020_programmers/_02_/src/create_a_large_number_js.ipynb)
+
+* [타워(tail recursion)](2019-2020_programmers/_01_/src/typescript/tower_tail_recursion.ts) &nbsp; /
+    &nbsp; [타워(iteration loop)](2019-2020_programmers/_01_/src/typescript/tower_iteration_loop.ts)
 
 * [영어 끝말잇기](2019-2020_programmers/_06_/src/typescript/word_concat.js)
 
