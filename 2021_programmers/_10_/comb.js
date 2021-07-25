@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/72411?language=kotlin
+
 const comb = (arr, selectNumber) => {
   if (selectNumber === 1) 
     return arr.map((value) => [value]);

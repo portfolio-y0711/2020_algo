@@ -1,8 +1,11 @@
+// https://programmers.co.kr/learn/courses/30/lessons/43238
+
 function solution(n, times) {
   var answer = 0;
   let left = 1;
   let right = Math.max(...times) * n;
   let mid, total;
+
   while (left < right) {
     mid = Math.floor((left + right) / 2, 0);
     total = times.reduce((total, t) => {
