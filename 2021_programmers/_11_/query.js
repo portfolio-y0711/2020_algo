@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/72412
+
 function solution(info, query) {
   const infos = info
     .map(x => x.split(' '))
@@ -5,8 +7,6 @@ function solution(info, query) {
       acc.push(curr)
       return acc
     }, [])
-
-  // console.log(infos)
 
   const queries = query
     .map(x => x.replace(/\sand\s/gi, ' ').split(' '))
@@ -36,7 +36,7 @@ function solution(info, query) {
       // "python frontend senior chicken 210",
       // "python frontend senior chicken 150",
       // "cpp backend senior pizza 260",
-      "java backend junior chicken 80",
+      // "java backend junior chicken 80",
       // "python backend senior chicken 50"
     ],
     [

@@ -1,5 +1,8 @@
 // https://programmers.co.kr/learn/courses/30/lessons/43238
 
+// 
+
+
 class Solution04 {
   fun solution(n: Int, times: IntArray): Long {
     var left = 1L

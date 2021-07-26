@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42627
+
 const solution = (_jobs) =>{
   let time = 0
   let cursor = 0
@@ -9,8 +11,8 @@ const solution = (_jobs) =>{
     // producer
     if (cursor < jobs.length) {
       if (jobs[cursor][0] <= time) {
-        console.log('--- producing ---')
-        console.log(jobs[cursor])
+        // console.log('--- producing ---')
+        // console.log(jobs[cursor])
         pq.push(jobs[cursor])
         pq.sort((a, b) => a[1] - b[1])
         cursor++ // 다음 작업을 가리킴
@@ -19,12 +21,12 @@ const solution = (_jobs) =>{
     }
     // consumer
     if (pq.length == 0) {
-      console.log('--- wating ---')
+      // console.log('--- wating ---')
       time = jobs[cursor][0]
     } else {
-      console.log('--- consuming ---')
+      // console.log('--- consuming ---')
       const [begin, work_time] = pq.shift()
-      console.log(`[ ${begin}, ${work_time} ]`)
+      // console.log(`[ ${begin}, ${work_time} ]`)
       response_time = response_time + time + work_time - begin
       time = time + work_time
     }

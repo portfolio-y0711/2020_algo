@@ -1,9 +1,17 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42890?language=kotlin
+
+// 후보키
+// 튜플 데이터의 조합을 구성함에 있어 선택함-선택하지 않음을 2진수 비트로 표현하고자 함
+// 이를 위해 칼럼 개수를 2진수로 변환하기 위한 시프트 연산 수행함 
+// 2^칼럼 개수에 해당하는 10진수를 루프로 순회하며 조합 생성함
+// 튜플 데이터의 칼럼 시프트 연산을 통해 키를 하나라도 포함할 경우 레코드에 포함시킴
+
 function solution(relation) {
   var combinations = [];
   var rows = relation.length;
   var columns = relation[0].length;
 
-  for (var i = 1; i <= (1 << columns) - 1; i++) {
+  for (var i = 1; i < (1 << columns); i++) {
     const keyMaps = {}
     for (let j = 0; j < rows; j++) {
       const records = [];
@@ -18,7 +26,7 @@ function solution(relation) {
         keyMaps[records.join("-")] = 1;
       }
     }
-    console.log(keyMaps)
+    // console.log(keyMaps)
     const isUnique = Object.keys(keyMaps).length == rows
     
     if (isUnique && isMinimal(combinations, i)) {
