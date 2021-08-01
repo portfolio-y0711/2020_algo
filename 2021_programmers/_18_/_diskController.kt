@@ -14,31 +14,28 @@ import java.util.*
 // 큐에 작업이 남아 있다면 하나씩 꺼내면서 현재의 시간에 작업 소요시간을 더해줌
 // 큐가 비어 있으나 대기 중인 작업이 존재할 경우 바로 다음 대기 작업만큼 시간으로 현재 시간을 동기화함
 
-class Solution18 {
+class Solution18_1 {
   fun solution(jobs: Array<IntArray>): Int {
     var time = 0
     var cursor = 0
     var totalResponseTime = 0
-    val compareByWorkTime: Comparator<Pair<Int, Int>> = compareBy { it.second }
-    var queue: PriorityQueue<Pair<Int, Int>> = PriorityQueue(compareByWorkTime)
-    var job: Pair<Int, Int>
+    var queue: Queue<IntArray> = LinkedList()
+    var job: IntArray
 
     while (cursor < jobs.size) {
       //producing queue
       if (jobs[cursor][0] <= time) {
-        queue.add(Pair(jobs[cursor][0], jobs[cursor][1]))
+        queue.add(jobs[cursor])
         cursor++
       }
-      println("---")
-      println(queue)
       
       // consuming queue
       if (queue.isEmpty()) {
         time = jobs[cursor][1]
       } else {
         job = queue.poll()
-        time = time + job.second
-        totalResponseTime = totalResponseTime + time - job.first
+        time = time + job[1]
+        totalResponseTime = totalResponseTime + time - job[0]
       }
       // println("totalResponseTime: $totalResponseTime")
       // println("cursor: $cursor")
@@ -49,7 +46,7 @@ class Solution18 {
 }
 
 fun main(args: Array<String>) {
-  Solution18()
+  Solution18_1()
     .solution(
       arrayOf(
         intArrayOf(0, 3),
