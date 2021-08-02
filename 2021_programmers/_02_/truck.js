@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42583
+
 function solution(bridge_length, weight, truck_weights) {
   let time = 0
   let trucks_on_bridge = Array(bridge_length).fill(0)
